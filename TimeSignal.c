@@ -4,7 +4,7 @@
 // Place any necessary global variables here
 
 void handle_sigfpe(int signum){
-
+	// test fork?
 	// Handler code goes here
 
 }
