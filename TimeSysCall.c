@@ -19,7 +19,7 @@ int main(int argc, char *argv[]){
 		getpid();
 	}
 	gettimeofday(&tv_end, NULL);
-	final_time = tv_end.tv_usec - tv_start.tv_usec;
+	final_time = (tv_end.tv_sec * 1e6 + tv_end.tv_usec) - (tv_start.tv_sec * 1e6 + tv_start.tv_usec);
 	avg_time = (final_time)/loopCount;
 	printf("Syscalls Performed: %d\n", loopCount);
 	printf("Total Elapsed Time: %f microseconds\n", final_time);
