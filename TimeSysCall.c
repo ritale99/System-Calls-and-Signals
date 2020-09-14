@@ -22,7 +22,7 @@ int main(int argc, char *argv[]){
 	final_time = tv_end.tv_usec - tv_start.tv_usec;
 	avg_time = (final_time)/loopCount;
 	printf("Syscalls Performed: %d\n", loopCount);
-	printf("Total Elapse Time: %f microseconds\n", final_time);
+	printf("Total Elapsed Time: %f microseconds\n", final_time);
 	printf("Average Time Per Syscall: %f microseconds\n", avg_time);
 	return 0;
 }
